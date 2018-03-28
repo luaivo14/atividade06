@@ -46,7 +46,7 @@ public class TestMediana {
         double vetor[]= {1,2,3,4,5};
         Mediana mediana = new Mediana();
         double res = mediana.acharMediana(vetor);
-         assertTrue(res == 3);
+        assertEquals(3.00,res,0.01);
      }
      
 }
