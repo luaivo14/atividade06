@@ -41,4 +41,12 @@ public class TestMediana {
             assertEquals("Erro vetor e vazio", ex.getMessage());
         }
      }
+     @Test
+     public void acharMedianaimpar() throws Exception {
+        double vetor[]= {1,2,3,4,5};
+        Mediana mediana = new Mediana();
+        double res = mediana.acharMediana(vetor);
+         assertTrue(res == 3);
+     }
+     
 }
