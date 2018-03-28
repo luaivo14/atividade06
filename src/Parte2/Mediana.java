@@ -16,7 +16,10 @@ public class Mediana {
    public double acharMediana(double vetor[]) throws Exception{
        if(vetor == null){
                throw new Exception("Erro vetor e nulo");
-       }  
+       }
+       if(vetor.length == 0){
+               throw new Exception("Erro vetor e vazio");
+       }    
        return 0;
    }
 }
