@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import Parte2.Mediana;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,14 +21,13 @@ public class TestMediana {
     
      @Test
      public void testvetorNulo() {
-         double vetor[]= null;
-         Mediana mediana = new mediana();
-         try{
-             String res = mediana.acharMediana(vetor);
-             fail();
-         cath(Exception e){
-             assertEquals(res, "erro vetor e nulo");
-         }
-         
+        double vetor[]= null;
+        Mediana mediana = new Mediana();
+        try {
+            double res = mediana.acharMediana(vetor);
+            fail();
+        } catch (Exception ex) {
+            assertEquals("Erro vetor e nulo", ex.getMessage());
+        }
      }
 }
